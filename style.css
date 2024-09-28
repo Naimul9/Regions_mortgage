@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+
+body{
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 20px auto;
+    
+} 
+
+#form-section{
+    flex: 1;
+}
+
+#img-section{
+    flex: 1;
+    
+}
+
+
+body img{ 
+    height: 550px;
+    width: 400px;
+}
+
+
+header{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.body h1{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.body p{
+
+    text-align: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 5px;
+    margin: 20px 200px;
+   
+
+}
+
+#form input{
+    padding: 18px 200px;
+    border-radius: 10px;
+    display: flex;
+    
+} 
+
+#form button{
+    padding: 16px 200px;
+    border-radius: 30px;
+    display: flex;
+    
+}
+
+
+
+
+
+#logo{
+    display: flex  ;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+
+#logo span{
+    margin-top: 0px;
+    font-size: 14px;
+   font-weight: 300;
+   font-weight: 600;
+}
+
+
+
+#logo img{
+   
+    height: 50px;
+    width: 55px;
+}
+
+#customer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#customer button{
+    color: #668355;
+    height: 40px;
+    padding:5px 10px 5px 10px ;
+    border-radius: 20px; 
+    border-color: gray ;
+    background-color: white;
+   
+}
+
+
