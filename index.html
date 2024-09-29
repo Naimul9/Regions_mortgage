@@ -8,51 +8,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="house">
 
-<div id="form-section">
-    <header >
-     
-        <div id="logo">
-            <img src="/Images/logo-pyramid.svg" alt="">
-             <p>  REGIONS <br> <span>Mortgage</span> </p>
-        </div>
-        
-        <div id="customer" >
-            <p>Are you a new customer?</p>
-            <button>Enroll Now</button>
-        </div>
-        
+    
+       
+    <div id="form-section">
+        <header>
+
+            <div id="logo">
+                <img src="/Images/logo-pyramid.svg" alt="">
+                <p> REGIONS <br> <span>Mortgage</span> </p>
+            </div>
+
+            <div id="customer">
+                <p>Are you a new customer?</p>
+                <div class="menu-container">
+                    <button>Enroll Now</button>
+                    <div class="dropdown-menu">
+                        <ul style="padding: 5px;">
+                            <li>Enroll new to:</li>
+                            <li style="display: flex; align-items:center; gap: 1px; "> <img
+                                    style="height: 20px; width: 16px; " src="/Images/mark_12224525.png" alt=""> Access
+                                your loans online</li>
+                            <li style="display: flex; align-items:center; gap: 1px; "> <img
+                                    style="height: 20px; width: 16px;" src="/Images/mark_12224525.png" alt="">Pay your
+                                mortgage online</li>
+                            <li style="display: flex; align-items:center; gap: 1px; "> <img
+                                    style="height: 20px; width: 16px;" src="/Images/mark_12224525.png" alt="">View your
+                                mortgage statements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </header>
-        
-        
-        <div class="body">
-            <h1>Welcome Back</h1>
-            <p>Sign in to your Regions MyMortgage account.</p>
-        
+
+        <div id="remove-bg">
+            <div class="body">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your Regions MyMortgage account.</p>
+
             <form id="form">
-                <input type="text">
-                <input type="text">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <button style="border:none; background-color:#4e892c">Login</button>
-                <p style="text-align: center; color:#668355 ;">Forget online id?    <span style="margin-left: 10px;" >Forget password?</span> </p>  
+  <!-- Online ID field with floating label -->
+  <div class="input-container">
+    <input type="text" id="online-id" name="online-id" required>
+    <label for="online-id">Online ID</label>
+</div>
+
+<!-- Password field with floating label -->
+<div class="input-container">
+    <input type="password" id="password" name="password" required>
+    <label for="password">Password</label>
+</div>
+  <!-- Checkbox aligned with "Remember me" -->
+  <div class="checkbox-container">
+    <input style="width: 16px;" type="checkbox" id="remember-me" name="remember-me">
+    <label for="remember-me">Remember me</label>
+  </div>
+                <button disabled id="login-btn" type="button" style="border:none; position: relative;">Login
+                    <span id="spinner" style="display:none; " class="spinner"></span>
+                </button>
+                <p style="text-align: center; color:#668355 ;">Forget online id? <span style="margin-left: 10px;">Forget
+                        password?</span> </p>
             </form>
 
-            <p>Equal Housing Lender    Member FDIC</p>
-            <p>© Regions Financial Corporation  All Rights Reserved     1(800) REGIONS
+            <p>Equal Housing Lender Member FDIC</p>
+            <p>© Regions Financial Corporation All Rights Reserved 1(800) REGIONS
             </p>
-        
+
         </div>
-
 </div>
+    </div>
 
 
 
+    <div id="image-section" style="border: 1px; border-radius: 50px; overflow: hidden; object-fit:cover; margin:0px 40px ">
+        <img id="sign-img" src="/Images/signIn_image.jpg" alt="Sign In Image">
+    </div>
 
-<div id="image-section" style=" border: 1px; border-radius: 50px; overflow: hidden; object-fit:cover; margin:0px 40px 0px 40px;">
-    <img src="/Images/signIn_image.jpg" alt="Sign In Image">
-</div>
-
+    <script src="/index.js"></script>
 </body>
 
 </html>
